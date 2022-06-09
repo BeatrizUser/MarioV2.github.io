@@ -2,10 +2,10 @@ let mario, ground, pipeImg, marioImg, backgroundImg, groundImg;
 let pipes = []
 
 function preload(){
-    marioImg = loadImage('/assets/mario.gif')
-    pipeImg = loadImage('/assets/pipe.png')
-    backgroundImg = loadImage('/assets/Background_1.webp')
-    groundImg = loadImage('/assets/grama.png')
+    marioImg = loadImage('assets/mario.gif')
+    pipeImg = loadImage('assets/pipe.png')
+    backgroundImg = loadImage('assets/Background_1.webp')
+    groundImg = loadImage('assets/grama.png')
 }
 function setup() {
     createCanvas(700, 300);

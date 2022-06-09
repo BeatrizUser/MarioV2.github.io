@@ -12,7 +12,7 @@ class Pipe{
         image(pipeImg, this.x, this.y, this.r, this.r)
 
         // VISUALIZADOR DO COLLIDER
-        fill(255, 50)
-        rect(this.x, this.y, this.r, this.r+10)
+        // fill(255, 50)
+        // rect(this.x, this.y, this.r, this.r+10)
     }
 }

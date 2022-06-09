@@ -23,8 +23,8 @@ class Mario{
         image(marioImg,this.x, this.y, this.r ,47)
         
         // VISUALIZADOR DO COLLIDER
-        fill(255, 50)
-        rect(this.x+2, this.y+3, this.r-6, 43)
+        // fill(255, 50)
+        // rect(this.x+2, this.y+3, this.r-6, 43)
 
     }
 }
