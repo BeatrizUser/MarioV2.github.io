@@ -14,6 +14,11 @@ function setup() {
     mario_morto = new Mario()
     ground = new GramaGround()
   }
+function keyPressed(){
+    if(key == " "){
+        mario.jump()
+    }
+  }
 function touchStarted(){
     if(value === 0){
         mario.jump()
@@ -21,11 +26,9 @@ function touchStarted(){
   }
   
 function draw() {
-    if(random(2) < 0.01){
+    if(random(2) < 0.001){
         pipes.push(new Pipe())
     }
-
-
     background(backgroundImg);
     ground.show()
     ground.move()
