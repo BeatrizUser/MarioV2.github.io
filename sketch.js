@@ -1,5 +1,6 @@
 let mario, ground, pipeImg, marioImg, backgroundImg, groundImg;
 let pipes = []
+let value = 0;
 
 function preload(){
     marioImg = loadImage('assets/mario.gif')
@@ -13,14 +14,14 @@ function setup() {
     mario_morto = new Mario()
     ground = new GramaGround()
   }
-function keyPressed(){
-    if(key == " "){
+function touchStarted(){
+    if(value === 0){
         mario.jump()
     }
   }
   
 function draw() {
-    if(random(1) < 0.01){
+    if(random(2) < 0.01){
         pipes.push(new Pipe())
     }
 
