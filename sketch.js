@@ -9,7 +9,7 @@ function preload(){
     groundImg = loadImage('assets/grama.png')
 }
 function setup() {
-    createCanvas(700, 300);
+    createCanvas(displayWidth, displayHeight*0.8);
     mario = new Mario()
     mario_morto = new Mario()
     ground = new GramaGround()
@@ -26,7 +26,7 @@ function touchStarted(){
   }
   
 function draw() {
-    if(random(2) < 0.001){
+    if(random(1) < 0.01){
         pipes.push(new Pipe())
     }
     background(backgroundImg);

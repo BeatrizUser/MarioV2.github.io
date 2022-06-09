@@ -9,6 +9,8 @@ class Mario{
     jump(){
         if (this.y == height - 88){
             this.vy = -14
+        }else if (this.y <= height - 100){
+            this.vy = -5
         }
     }
     hits(pipe){

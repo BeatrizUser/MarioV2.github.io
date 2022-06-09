@@ -1,6 +1,6 @@
 class GramaGround{
     constructor(){
-        this.r = 0
+        this.r = displayWidth
         this.x = 0
         this.y = height
     }
