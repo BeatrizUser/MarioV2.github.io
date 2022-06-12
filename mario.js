@@ -7,10 +7,11 @@ class Mario{
         this.gravity = 1
     }
     jump(){
+        console.log(this.vy)
         if (this.y == height - 88){
             this.vy = -14
-        }else if (this.y <= height - 100){
-            this.vy = -5
+        }else if (this.vy >= 8){
+            this.vy = -10
         }
     }
     hits(pipe){

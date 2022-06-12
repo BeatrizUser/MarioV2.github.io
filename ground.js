@@ -1,14 +1,15 @@
-class GramaGround{
+class Ground{
     constructor(){
-        this.r = displayWidth
-        this.x = 0
-        this.y = height
+        this.r = 50
+        this.x = 80
+        this.y = 0
     }
     move(){
-        this.y = constrain(this.y, 0, height - 47)
+        console.log(this.x)
+        this.x -= 5
     }
     show(){
-        image(groundImg,this.x, this.y, this.r ,47)
+        image(groundImg,this.x, displayHeight-138, 0, 0)
         
         // VISUALIZADOR DO COLLIDER
         // fill(255, 50)
